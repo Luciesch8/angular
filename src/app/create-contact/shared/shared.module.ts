@@ -5,13 +5,16 @@ import { TableComponent } from './component/table/table.component';
 import {MatTableModule} from '@angular/material/table';
 import { HttpService } from './service/http.service';
 import { PromiseService } from './service/promise.service';
+import { ModelComponent } from './model/model.component';
+import { ModelContact } from './model/model-contact';
 
 
 
 
 @NgModule({
   declarations: [
-    TableComponent
+    TableComponent,
+    ModelComponent
   ],
   exports: [
     TableComponent
@@ -23,7 +26,8 @@ import { PromiseService } from './service/promise.service';
   ],
   providers : [
     HttpService,
-    PromiseService
+    PromiseService,
+    ModelContact
   ]
 })
 
