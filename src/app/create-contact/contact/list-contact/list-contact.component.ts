@@ -21,11 +21,15 @@ export class ListContactComponent implements OnInit {
   ngOnInit(): void {
     this.displayedColumns = this.ModelContact.getContactModel()['listContact']
     this.promise.getList().then( value => {
-      console.log(value);
     this.dataSource = value;
     this.loading = false;
       
     })
+  }
+
+  public getLine(object: any){
+    console.log(object);
+    
   }
 
 }

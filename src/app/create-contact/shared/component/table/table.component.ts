@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 
 
@@ -13,6 +13,8 @@ export class TableComponent implements OnInit {
   @Input() dataSource = [];
   @Input() displayedColumns = [];
 
+  @Output() lineObject = new EventEmitter<any>;
+
   public showColumn : any[] = [];
 
   constructor() { }
@@ -22,6 +24,10 @@ export class TableComponent implements OnInit {
     console.log(this.displayedColumns);
     console.log(this.showColumn);
     
+  }
+
+  public getLine(object:any){
+    this.lineObject.emit(object);
   }
 
 }
