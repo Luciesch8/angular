@@ -7,6 +7,7 @@ import { HttpService } from './service/http.service';
 import { PromiseService } from './service/promise.service';
 import { ModelComponent } from './model/model.component';
 import { ModelContact } from './model/model-contact';
+import { BoldPipe } from './pipe/bold.pipe';
 
 
 
@@ -14,10 +15,12 @@ import { ModelContact } from './model/model-contact';
 @NgModule({
   declarations: [
     TableComponent,
-    ModelComponent
+    ModelComponent,
+    BoldPipe
   ],
   exports: [
-    TableComponent
+    TableComponent,
+    BoldPipe
   ],
   imports: [
     CommonModule,

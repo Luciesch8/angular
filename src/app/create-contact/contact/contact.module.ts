@@ -11,6 +11,8 @@ import { ContactRoutingModule } from './contact-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { ListContactComponent } from './list-contact/list-contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ListContact2Component } from './list-contact2/list-contact2.component';
+import { PrintContactComponent } from './print-contact/print-contact.component';
 
 
 
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     CreateContactComponent,
-    ListContactComponent
+    ListContactComponent,
+    ListContact2Component,
+    PrintContactComponent
   ],
   imports: [
 

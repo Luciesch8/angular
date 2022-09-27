@@ -35,6 +35,15 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "../backProjet/public/dist",
+              "baseHref": "/",
+              "deployUrl": "/dist/",
+              "optimization": true,
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",

@@ -1,0 +1,14 @@
+<div *ngIf="!loading">
+    
+    <p>Nom: {{contact[0]['nom']}}</p>
+    <p>Prénom: {{contact[0]['prenom']}}</p>
+    <p>Adresse: {{contact[0]['adresse']}}</p>
+    <p>Email: {{contact[0]['email']}}</p>
+    <p>Téléphone: </p>    
+    <span [innerHtml]="contact[0]['tel']| bold"></span>
+
+
+
+    
+</div>
+
